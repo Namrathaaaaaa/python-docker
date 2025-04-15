@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  hangman:
+    build:
+      context: .
+    container_name: hangman-game
+    stdin_open: true         # Allows interactive input (for games like Hangman)
+    tty: true 
+    
